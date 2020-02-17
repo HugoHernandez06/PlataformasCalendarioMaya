@@ -7,7 +7,7 @@ package calendariomaya;
 
 /**
  *
- * @author Administrador
+ * @author Administrador: Hugo Alejandro Hernandez Cardenas
  */
 
 import java.util.Scanner;
