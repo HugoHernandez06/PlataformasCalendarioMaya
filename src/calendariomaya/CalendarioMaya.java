@@ -39,7 +39,7 @@ public class CalendarioMaya {
         
         
         // CALENDARIO HAAAB
-        for(int i=0;i<numdia;i++){
+        for(int i=0;i<=numAño;i++){
             for(int j=0;j<19;j++){
                 if(j==18){
                     limite = 5;
@@ -66,22 +66,22 @@ public class CalendarioMaya {
         
         int max = 5000;
         int tz_count = 0;
-        int tz_day = 1;
+        int dias_tz = 1;
         
         // CALENDARIO TZOLKIN
-        for(int i=0;i<=max;i++){
+        for(int i=0;i<max;i++){
             for(int j=1;j<=13;j++){
                 for (int k=0;k<20;k++) {
-                    if(tz_day >=14){
-                        tz_day = 1;
+                    if(dias_tz >=14){
+                        dias_tz = 1;
                     }
-                    if (tz_count == count) {
-                        System.out.println("Tzolkin" +  " " + tz_day++ +" " + dias_TZOLKIN[k] + " " + i);
+                    if (count == tz_count) {
+                        System.out.println("Tzolkin" +  " " + dias_tz++ +" " + dias_TZOLKIN[k] + " " + i);
                         br = true;
                         break;
                     }
                     tz_count++;
-                    tz_day++;
+                    dias_tz++;
                 }
                 if(br){
                     break;
